@@ -1,5 +1,6 @@
 import { projects } from "@/data/content";
 import { Button } from "@/components/ui/Button";
+import { CoverImage } from "@/components/ui/CoverImage";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/cn";
 
@@ -36,12 +37,11 @@ export function Projects({ featuredCount, showHeading = true }: ProjectsProps) {
                   index % 2 === 1 && "lg:[&>div:first-child]:order-2",
                 )}
               >
-                <div className={cn("image-zoom relative lg:col-span-8", index % 2 === 1 && "lg:col-start-5")}>
-                  <img
+                <div className={cn("image-zoom relative min-h-[16rem] bg-midnight lg:col-span-8", index % 2 === 1 && "lg:col-start-5")}>
+                  <CoverImage
                     src={project.image.src}
                     alt={project.image.alt}
-                    className="aspect-[16/10] w-full object-cover md:aspect-[3/2]"
-                    loading="lazy"
+                    className="aspect-[16/10] w-full md:aspect-[3/2]"
                   />
                 </div>
                 <div className={cn("lg:col-span-4", index % 2 === 1 ? "lg:col-start-1 lg:row-start-1 lg:pr-8" : "lg:pl-4")}>

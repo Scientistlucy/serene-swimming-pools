@@ -1,5 +1,5 @@
-const unsplash = (id: string, extra = "") =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=2000&q=80${extra}`;
+const unsplash = (id: string) =>
+  `https://images.unsplash.com/${id}?ixlib=rb-4.1.0&auto=format&fit=crop&w=2000&q=80`;
 
 export type SiteImage = {
   src: string;
@@ -34,12 +34,12 @@ export const images = {
     credit: "Unsplash",
   },
   finishing: {
-    src: unsplash("photo-1604709177225-055fef2fc0b0"),
+    src: unsplash("photo-1584622650111-993a426fbf0a"),
     alt: "Precision tiling and stone finishing detail",
     credit: "Unsplash",
   },
   water: {
-    src: unsplash("photo-1575429198097-5407a1103d5d"),
+    src: unsplash("photo-1572331165267-854da2b10ccc"),
     alt: "Close view of swimming pool water and tiled edge",
     credit: "Unsplash",
   },
@@ -71,8 +71,8 @@ export const serviceImages: Record<string, SiteImage> = {
     alt: "Stone and tile surfaces for pool finishing",
   },
   features: {
-    src: unsplash("photo-1432405972617-f8e8bde8eaeb"),
-    alt: "Water moving over stone, suggesting a water feature",
+    src: unsplash("photo-1540541338287-41700207dee6"),
+    alt: "Water moving across a finished pool edge",
   },
   commercial: {
     src: unsplash("photo-1566073771259-6a8506099945"),
@@ -82,8 +82,8 @@ export const serviceImages: Record<string, SiteImage> = {
 
 export const poolTypeImages: Record<string, SiteImage> = {
   infinity: {
-    src: unsplash("photo-1562778612-32248a0c0c5b"),
-    alt: "Infinity swimming pool edge meeting the horizon",
+    src: unsplash("photo-1540541338287-41700207dee6"),
+    alt: "Infinity swimming pool edge meeting the landscape",
   },
   residential: {
     src: unsplash("photo-1600596542815-ffad4c1539a9"),
@@ -106,7 +106,7 @@ export const poolTypeImages: Record<string, SiteImage> = {
     alt: "Resort-style swimming pool with lounge setting",
   },
   compact: {
-    src: unsplash("photo-1600047509807-ba8f99d2cdbc"),
+    src: unsplash("photo-1600585154340-be6161a56a0c"),
     alt: "Compact courtyard pool in a contemporary property",
   },
 };
@@ -114,18 +114,18 @@ export const poolTypeImages: Record<string, SiteImage> = {
 export const projectImages: SiteImage[] = [
   {
     src: unsplash("photo-1613977257363-707ba9348227"),
-    alt: "Placeholder photography for a luxury residential pool project",
+    alt: "Luxury residential swimming pool beside a modern villa",
   },
   {
     src: unsplash("photo-1512917774080-9991f1c4c750"),
-    alt: "Placeholder photography for a dusk residential pool setting",
+    alt: "Evening residential swimming pool with the house lights on",
   },
   {
     src: unsplash("photo-1564501049412-61c2a3083791"),
-    alt: "Placeholder photography for a landscaped hospitality pool",
+    alt: "Landscaped hospitality swimming pool",
   },
   {
-    src: unsplash("photo-1596394516093-50137fbda1e9"),
-    alt: "Placeholder photography for a tropical outdoor pool",
+    src: unsplash("photo-1499793983690-e29da59ef1c2"),
+    alt: "Garden swimming pool beside a private tropical villa",
   },
 ];

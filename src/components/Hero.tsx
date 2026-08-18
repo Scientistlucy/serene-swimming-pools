@@ -1,16 +1,14 @@
 import { images } from "@/data/content";
 import { site } from "@/data/site";
 import { Button } from "@/components/ui/Button";
+import { CoverImage } from "@/components/ui/CoverImage";
 
 export function Hero() {
   return (
     <section id="top" className="relative min-h-[100svh] overflow-hidden bg-midnight text-ivory">
-      <img
-        src={`${images.hero.src}&w=2400`}
-        alt={images.hero.alt}
-        className="absolute inset-0 h-full w-full object-cover"
-        fetchPriority="high"
-      />
+      <div className="absolute inset-0">
+        <CoverImage src={images.hero.src} alt={images.hero.alt} decorative priority className="h-full w-full" />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-r from-midnight/80 via-midnight/35 to-midnight/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-midnight/70 via-transparent to-midnight/25" />
 

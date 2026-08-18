@@ -2,6 +2,7 @@
 
 import { services } from "@/data/content";
 import { Button } from "@/components/ui/Button";
+import { CoverImage } from "@/components/ui/CoverImage";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/cn";
 import { useState } from "react";
@@ -30,12 +31,12 @@ export function Services({ compact = false, showHeading = true }: ServicesProps)
 
         <div className={cn("grid gap-10 lg:grid-cols-12 lg:gap-16", showHeading && "mt-14")}>
           <Reveal className="lg:col-span-6">
-            <div className="image-zoom relative aspect-[4/5] w-full md:aspect-[5/6]">
-              <img
+            <div className="image-zoom relative aspect-[4/5] w-full overflow-hidden bg-midnight md:aspect-[5/6]">
+              <CoverImage
                 key={featured.id}
                 src={featured.image.src}
                 alt={featured.image.alt}
-                className="h-full w-full object-cover"
+                className="h-full w-full"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-midnight/70 to-transparent p-6 md:p-8">
                 <p className="text-[0.7rem] uppercase tracking-[0.2em] text-sand">{featured.number}</p>

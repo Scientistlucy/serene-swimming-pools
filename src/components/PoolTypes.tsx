@@ -1,4 +1,5 @@
 import { poolTypes } from "@/data/content";
+import { CoverImage } from "@/components/ui/CoverImage";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function PoolTypes() {
@@ -17,9 +18,9 @@ export function PoolTypes() {
         {poolTypes.map((type) => (
           <article
             key={type.id}
-            className="image-zoom relative h-[28rem] w-[78vw] shrink-0 snap-start sm:w-[22rem] md:h-[34rem] md:w-[26rem]"
+            className="image-zoom relative h-[28rem] w-[78vw] shrink-0 snap-start overflow-hidden bg-midnight sm:w-[22rem] md:h-[34rem] md:w-[26rem]"
           >
-            <img src={type.image.src} alt={type.image.alt} className="h-full w-full object-cover" loading="lazy" />
+            <CoverImage src={type.image.src} alt={type.image.alt} className="h-full w-full" />
             <div className="absolute inset-0 bg-gradient-to-t from-midnight/80 via-midnight/10 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-6 text-ivory">
               <h3 className="font-serif text-3xl">{type.name}</h3>

@@ -1,3 +1,4 @@
+import { CoverImage } from "@/components/ui/CoverImage";
 import type { SiteImage } from "@/data/images";
 
 type PageHeroProps = {
@@ -10,7 +11,9 @@ type PageHeroProps = {
 export function PageHero({ eyebrow, title, description, image }: PageHeroProps) {
   return (
     <section className="relative min-h-[72vh] overflow-hidden bg-midnight text-ivory md:min-h-[78vh]">
-      <img src={image.src} alt={image.alt} className="absolute inset-0 h-full w-full object-cover" />
+      <div className="absolute inset-0">
+        <CoverImage src={image.src} alt={image.alt} decorative priority className="h-full w-full" />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-r from-midnight/82 via-midnight/40 to-midnight/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-midnight/75 via-transparent to-midnight/25" />
       <div className="site-wrap relative flex min-h-[72vh] items-end pb-14 pt-32 md:min-h-[78vh] md:pb-20">
