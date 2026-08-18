@@ -1,6 +1,6 @@
-# Serene Swimming Pool Contractors
+# Adgreens landscape
 
-Premium multi-page website for Serene Swimming Pool Contractors — swimming pool design, construction and care in Kenya.
+Premium multi-page website for Adgreens landscape — garden design, landscaping and outdoor care in Nairobi, Kenya.
 
 ## Pages
 

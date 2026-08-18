@@ -7,7 +7,7 @@ import { images } from "@/data/images";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Swimming pool design, construction, renovation, maintenance, finishing and commercial pool building across Kenya.",
+    "Landscape design, garden installation, lawns, planting, hardscape, red soil and manure supply, and garden care across Nairobi and Kenya.",
 };
 
 export default function ServicesPage() {
@@ -15,8 +15,8 @@ export default function ServicesPage() {
     <main id="content">
       <PageHero
         eyebrow="Services"
-        title="Construction, finishing and care — held in one conversation."
-        description="From custom design to equipment, tiling and commercial pools. Every service sits inside the same standard of work."
+        title="Construction, planting and care — held in one conversation."
+        description="From custom landscape design to lawns, soil and commercial frontages. Every service sits inside the same standard of work."
         image={images.water}
       />
       <Services showHeading={false} />

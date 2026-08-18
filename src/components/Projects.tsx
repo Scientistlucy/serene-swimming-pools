@@ -22,8 +22,8 @@ export function Projects({ featuredCount, showHeading = true }: ProjectsProps) {
               Built to Be Seen. Built to Last.
             </h2>
             <p className="mt-6 max-w-xl text-ink/75">
-              Residential and commercial swimming pools designed around the property — from private gardens
-              in Nairobi to hospitality terraces beyond the city.
+              Residential and commercial landscapes designed around the property — from private gardens
+              in Nairobi to building frontages beyond the city.
             </p>
           </Reveal>
         ) : null}

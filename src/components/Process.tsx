@@ -36,7 +36,7 @@ export function Process({ showHeading = true }: { showHeading?: boolean }) {
             {showHeading ? (
               <>
                 <p className="eyebrow">The process</p>
-                <h2 className="display mt-4 text-4xl md:text-5xl">From first conversation to water in the pool.</h2>
+                <h2 className="display mt-4 text-4xl md:text-5xl">From first conversation to a garden that holds.</h2>
               </>
             ) : (
               <p className="eyebrow">The steps</p>

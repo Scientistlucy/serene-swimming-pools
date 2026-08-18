@@ -1,159 +1,159 @@
-import { images, poolTypeImages, projectImages, serviceImages } from "./images";
+import { gardenTypeImages, images, projectImages, serviceImages } from "./images";
 
 export const services = [
   {
     id: "design",
     number: "01",
-    name: "Swimming Pool Design",
+    name: "Landscape Design",
     description:
-      "Custom pool layouts that respond to the property, how you live, and how the space should feel.",
+      "Garden layouts that respond to the house, the climate and how you actually use the outdoors.",
     image: serviceImages.design,
   },
   {
     id: "construction",
     number: "02",
-    name: "Swimming Pool Construction",
+    name: "Garden Installation",
     description:
-      "Structured building from excavation through shell, plumbing and waterproofing — built to last.",
+      "From soil preparation through planting and finishing — a garden built to take root and last.",
     image: serviceImages.construction,
   },
   {
-    id: "renovation",
+    id: "lawn",
     number: "03",
-    name: "Pool Renovation",
+    name: "Lawns & Groundcover",
     description:
-      "Bring an ageing pool back to life with improved finishes, equipment and a clearer spatial presence.",
+      "Lawns and planted ground that hold the house and garden in one outdoor room.",
     image: serviceImages.renovation,
   },
   {
-    id: "maintenance",
+    id: "planting",
     number: "04",
-    name: "Pool Maintenance",
+    name: "Planting",
     description:
-      "Ongoing care that keeps water balanced, systems working and the pool ready to use.",
-    image: serviceImages.maintenance,
-  },
-  {
-    id: "equipment",
-    number: "05",
-    name: "Pool Equipment & Filtration",
-    description:
-      "Pumps, filtration and circulation specified for reliable performance in Kenyan conditions.",
-    image: serviceImages.equipment,
-  },
-  {
-    id: "finishing",
-    number: "06",
-    name: "Pool Finishing & Tiling",
-    description:
-      "Coping, tiling and surface work that give the pool its final character and long-term durability.",
+      "Trees, shrubs and seasonal planting chosen for Kenyan light, water and the character of the site.",
     image: serviceImages.finishing,
   },
   {
-    id: "features",
-    number: "07",
-    name: "Water Features",
+    id: "hardscape",
+    number: "05",
+    name: "Hardscape & Outdoor Rooms",
     description:
-      "Spillways, fountains and still-water details that add movement and atmosphere around the pool.",
+      "Paths, paving and sitting areas that give the garden structure without shouting over the planting.",
     image: serviceImages.features,
+  },
+  {
+    id: "soil",
+    number: "06",
+    name: "Red Soil & Manure Supply",
+    description:
+      "Soil and manure for gardens that need a better start — supplied as part of the landscape work.",
+    image: serviceImages.equipment,
+  },
+  {
+    id: "maintenance",
+    number: "07",
+    name: "Garden Care",
+    description:
+      "Ongoing tending so the planting, lawns and edges stay in good condition after handover.",
+    image: serviceImages.maintenance,
   },
   {
     id: "commercial",
     number: "08",
-    name: "Commercial Pool Construction",
+    name: "Commercial Landscapes",
     description:
-      "Pools for hotels, apartments and institutions — designed for use, maintenance and lasting finish.",
+      "Frontages and grounds for offices, apartments and institutions — designed for daily use and simple upkeep.",
     image: serviceImages.commercial,
   },
 ] as const;
 
-export const poolTypes = [
-  {
-    id: "infinity",
-    name: "Infinity Pools",
-    enquiryType: "Infinity pool",
-    note: "For sites with a view, a vanishing edge can extend the water into the landscape.",
-    image: poolTypeImages.infinity,
-  },
+export const gardenTypes = [
   {
     id: "residential",
-    name: "Residential Pools",
-    enquiryType: "Residential pool",
-    note: "Private pools shaped around the house, garden and the way the family uses the outdoors.",
-    image: poolTypeImages.residential,
+    name: "Residential Gardens",
+    enquiryType: "Residential garden",
+    note: "Private gardens shaped around the house, the family and the way the outdoors is used.",
+    image: gardenTypeImages.residential,
+  },
+  {
+    id: "lawn",
+    name: "Lawns & Terraces",
+    enquiryType: "Lawn and terrace",
+    note: "Open lawn with a clear edge — for sitting, gathering and a quieter view from the house.",
+    image: gardenTypeImages.lawn,
+  },
+  {
+    id: "courtyard",
+    name: "Courtyard Gardens",
+    enquiryType: "Courtyard garden",
+    note: "Smaller plots that still feel considered — planting, paving and a little shade.",
+    image: gardenTypeImages.courtyard,
   },
   {
     id: "commercial",
-    name: "Commercial Pools",
-    enquiryType: "Commercial / hotel pool",
-    note: "Hospitality and institutional pools built for daily use and straightforward upkeep.",
-    image: poolTypeImages.commercial,
+    name: "Commercial Frontage",
+    enquiryType: "Commercial landscape",
+    note: "Arrival landscapes for buildings that have to look tended every day.",
+    image: gardenTypeImages.commercial,
   },
   {
-    id: "geometric",
-    name: "Modern Geometric Pools",
-    enquiryType: "Modern geometric pool",
-    note: "Clean lines and considered proportions that sit naturally with contemporary architecture.",
-    image: poolTypeImages.geometric,
+    id: "borders",
+    name: "Planted Borders",
+    enquiryType: "Planted borders",
+    note: "Layered planting that softens walls, fences and the architecture of the house.",
+    image: gardenTypeImages.borders,
   },
   {
-    id: "family",
-    name: "Family Pools",
-    enquiryType: "Family pool",
-    note: "Practical depths, comfortable edges and a layout that works for everyday living.",
-    image: poolTypeImages.family,
-  },
-  {
-    id: "resort",
-    name: "Resort-Style Pools",
-    enquiryType: "Resort-style pool",
-    note: "Outdoor rooms for lingering — water, planting and poolside architecture together.",
-    image: poolTypeImages.resort,
+    id: "outdoor",
+    name: "Outdoor Rooms",
+    enquiryType: "Outdoor room",
+    note: "Places to sit and linger — garden, hardscape and planting held together.",
+    image: gardenTypeImages.outdoor,
   },
   {
     id: "compact",
-    name: "Compact Pools",
-    enquiryType: "Compact pool",
-    note: "Smaller footprints that still feel considered, even on tight urban plots.",
-    image: poolTypeImages.compact,
+    name: "Compact Gardens",
+    enquiryType: "Compact garden",
+    note: "Tight urban plots that still deserve a proper garden, not leftover grass.",
+    image: gardenTypeImages.compact,
   },
 ] as const;
 
 export const projects = [
   {
-    id: "karen-courtyard",
-    title: "Karen Courtyard Pool",
+    id: "karen-garden",
+    title: "Karen Garden Rooms",
     location: "Karen, Nairobi",
-    type: "Geometric",
+    type: "Residential",
     description:
-      "A still geometric pool set into a private garden, with stone coping and a quiet edge for evening use.",
+      "A sequence of lawn, planting and a quiet sitting edge — the garden treated as part of the house, not leftover ground.",
     image: projectImages[0],
   },
   {
-    id: "lavington-family",
-    title: "Lavington Family Pool",
+    id: "lavington-lawn",
+    title: "Lavington Lawn",
     location: "Lavington, Nairobi",
-    type: "Residential",
+    type: "Lawn",
     description:
-      "A family pool with a shallow shelf, clear circulation and planting that softens the architecture of the house.",
+      "A family lawn with a clear planted border, so the house opens onto green rather than a leftover patch of grass.",
     image: projectImages[1],
   },
   {
-    id: "naivasha-lodge",
-    title: "Naivasha Lodge Pool",
-    location: "Naivasha",
-    type: "Commercial",
+    id: "westlands-courtyard",
+    title: "Westlands Courtyard",
+    location: "Westlands, Nairobi",
+    type: "Courtyard",
     description:
-      "A hospitality pool designed for daily guest use, with a long swimming line and a terrace that opens to the garden.",
+      "A compact courtyard of paving, shade and planting — enough garden for a tight urban plot.",
     image: projectImages[2],
   },
   {
-    id: "runda-garden",
-    title: "Runda Garden Pool",
+    id: "runda-planting",
+    title: "Runda Planting",
     location: "Runda, Nairobi",
-    type: "Family",
+    type: "Planting",
     description:
-      "A compact garden pool that holds the house and lawn in one outdoor room — practical, calm and built for everyday living.",
+      "Layered borders that hold the house and drive in one landscape — practical, calm and built for everyday living.",
     image: projectImages[3],
   },
 ] as const;
@@ -161,19 +161,19 @@ export const projects = [
 export const reasons = [
   {
     title: "Thoughtful Design",
-    body: "Every pool should complement the property and the people using it. We start with the site, not a catalogue shape.",
+    body: "Every garden should complement the property and the people using it. We start with the site, not a catalogue of plants.",
   },
   {
-    title: "Quality Construction",
-    body: "Attention to structural integrity, waterproofing, finishing and the systems that keep the pool working for years.",
+    title: "Proper Installation",
+    body: "Attention to soil, levels, planting and the edges that keep a garden looking considered years after handover.",
   },
   {
     title: "Professional Execution",
-    body: "A clear process from initial conversation through construction and handover, so you always know what comes next.",
+    body: "A clear process from first conversation through installation and care, so you always know what comes next.",
   },
   {
     title: "Built Around Your Space",
-    body: "Pool designs should respond to the property rather than forcing a generic form onto it.",
+    body: "Landscape should respond to the house and climate rather than forcing a generic garden onto the plot.",
   },
 ] as const;
 
@@ -181,95 +181,95 @@ export const processSteps = [
   {
     number: "01",
     title: "Consultation",
-    body: "We talk through the site, how you want to use the pool, and the kind of atmosphere you have in mind.",
+    body: "We talk through the site, how you want to use the garden, and the kind of atmosphere you have in mind.",
   },
   {
     number: "02",
     title: "Site Assessment",
-    body: "A visit to understand access, levels, neighbouring structures and the practical constraints of the plot.",
+    body: "A visit to understand soil, levels, light, access and the practical constraints of the plot.",
   },
   {
     number: "03",
     title: "Design & Planning",
-    body: "Layout, depths, finishes and equipment are resolved into a buildable plan before construction begins.",
+    body: "Layout, planting, lawns and hardscape are resolved into a buildable plan before work begins.",
   },
   {
     number: "04",
-    title: "Construction",
-    body: "Excavation, structure, plumbing and waterproofing — the work that determines how the pool will last.",
+    title: "Installation",
+    body: "Soil, planting, lawns and outdoor rooms — the work that determines how the garden will grow.",
   },
   {
     number: "05",
     title: "Finishing",
-    body: "Tiling, coping, detailing and commissioning. This is where the pool takes on its final character.",
+    body: "Edges, paths and the last of the planting. This is where the garden takes on its character.",
   },
   {
     number: "06",
     title: "Handover",
-    body: "Systems are checked, the pool is filled, and you are shown how to live with and look after it.",
+    body: "The garden is walked through with you, and you are shown how to live with and look after it.",
   },
 ] as const;
 
 export const faqs = [
   {
-    q: "How much does swimming pool construction cost in Kenya?",
-    a: "Cost depends on size, design, ground conditions, finishes and equipment. There is no honest one-price-fits-all figure. After we understand your property and what you want to build, we prepare a quotation for that project.",
+    q: "How much does landscaping cost in Kenya?",
+    a: "Cost depends on plot size, design, soil, planting and hardscape. There is no honest one-price-fits-all figure. After we understand your property and what you want to build, we prepare a quotation for that garden.",
   },
   {
-    q: "How long does pool construction take?",
-    a: "Timelines vary with design complexity, site access, weather and finishing choices. Once the site has been assessed, we share a realistic programme rather than a generic number of weeks.",
+    q: "How long does a garden project take?",
+    a: "Timelines vary with design complexity, site access, weather and planting choices. Once the site has been assessed, we share a realistic programme rather than a generic number of weeks.",
   },
   {
-    q: "Do you design custom swimming pools?",
-    a: "Yes. Serene designs pools around the property — its architecture, outdoor space and how you intend to use the water — rather than applying a standard shape by default.",
+    q: "Do you design custom gardens?",
+    a: "Yes. Adgreens designs landscapes around the property — its architecture, outdoor space and how you intend to use the garden — rather than applying a standard layout by default.",
   },
   {
-    q: "Do you build residential and commercial pools?",
-    a: "Yes. We work on private residential pools as well as commercial projects such as hotels, apartments and other institutional settings.",
+    q: "Do you work on residential and commercial landscapes?",
+    a: "Yes. We work on private residential gardens as well as commercial frontages such as offices, apartments and other institutional settings.",
   },
   {
-    q: "What type of pool is suitable for my property?",
-    a: "That depends on plot size, levels, access, neighbouring structures and how the pool will be used. A site assessment is the most reliable way to decide between a compact family pool, a geometric courtyard pool, an infinity edge or a larger hospitality layout.",
+    q: "What type of garden is suitable for my property?",
+    a: "That depends on plot size, soil, light, access and how the outdoors will be used. A site assessment is the most reliable way to decide between a compact courtyard, a lawn and terrace, planted borders or a larger commercial frontage.",
   },
   {
-    q: "Do you provide maintenance services?",
-    a: "Yes. Alongside new construction we offer pool maintenance so the water, equipment and finishes stay in good condition after handover.",
+    q: "Do you provide garden care after installation?",
+    a: "Yes. Alongside new gardens we offer ongoing care so the planting, lawns and edges stay in good condition after handover.",
   },
   {
-    q: "Can you renovate an existing swimming pool?",
-    a: "Yes. Renovation can include resurfacing, tiling, equipment upgrades and spatial improvements to an existing pool that no longer looks or performs as it should.",
+    q: "Do you supply red soil and manure?",
+    a: "Yes. Red soil and manure supply sits alongside the landscape work, so gardens that need a better start can be prepared properly.",
   },
   {
     q: "How do I get a quotation?",
-    a: "Use the contact form to describe your space and the pool you have in mind, or reach us by phone or WhatsApp. We will follow up to arrange a conversation and, where needed, a site visit.",
+    a: "Use the contact form to describe your space and the garden you have in mind, or reach us by phone or WhatsApp. We will follow up to arrange a conversation and, where needed, a site visit.",
   },
 ] as const;
 
 export const testimonials = [
   {
     quote:
-      "They treated the garden as part of the house, not a leftover space. The pool sits quietly, and it works the way we actually live.",
+      "They treated the garden as part of the house, not leftover ground. The planting sits quietly, and it works the way we actually live.",
     attribution: "Amina K.",
     detail: "Karen, Nairobi",
   },
   {
     quote:
-      "Clear conversation from the first site visit through finishing. The tiling, the water, the edges — all of it feels considered rather than rushed.",
+      "Clear conversation from the first site visit through planting. The lawn, the borders, the edges — all of it feels considered rather than rushed.",
     attribution: "David M.",
     detail: "Kiambu",
   },
 ] as const;
 
 export const projectTypes = [
-  "Residential pool",
-  "Infinity pool",
-  "Family pool",
-  "Commercial / hotel pool",
-  "Resort-style pool",
-  "Modern geometric pool",
-  "Compact pool",
-  "Renovation",
-  "Maintenance",
+  "Residential garden",
+  "Lawn and terrace",
+  "Courtyard garden",
+  "Commercial landscape",
+  "Planted borders",
+  "Outdoor room",
+  "Compact garden",
+  "Garden care",
+  "Red soil and manure",
   "Not sure yet",
 ] as const;
 

@@ -7,9 +7,9 @@ export function WhyChooseUs() {
       <div className="site-wrap grid gap-14 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <Reveal>
-            <p className="eyebrow">Why Serene</p>
+            <p className="eyebrow">Why Adgreens</p>
             <h2 className="display mt-4 max-w-[11ch] text-4xl md:text-5xl">
-              Quiet craft. Clear process. Water that belongs to the house.
+              Quiet craft. Clear process. Gardens that belong to the house.
             </h2>
           </Reveal>
           <Reveal delay={120} className="mt-10 hidden lg:block">

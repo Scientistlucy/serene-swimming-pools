@@ -15,6 +15,7 @@ export function JsonLd() {
     },
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Northern Bypass Rd",
       addressLocality: "Nairobi",
       addressCountry: "KE",
     },

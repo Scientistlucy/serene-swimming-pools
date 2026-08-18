@@ -7,11 +7,11 @@ const config: Config = {
       colors: {
         ivory: "#F4F0E8",
         paper: "#FAF8F4",
-        midnight: "#0C1520",
+        midnight: "#12180F",
         charcoal: "#1C2329",
         stone: "#C4B8A5",
         sand: "#E8DCC8",
-        aqua: "#3A6B7A",
+        aqua: "#5C6B4A",
         ink: "#2A3238",
       },
       fontFamily: {

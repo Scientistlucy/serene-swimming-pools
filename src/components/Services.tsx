@@ -24,7 +24,7 @@ export function Services({ compact = false, showHeading = true }: ServicesProps)
           <Reveal>
             <p className="eyebrow text-sand">What we do</p>
             <h2 className="display mt-4 max-w-[16ch] text-4xl md:text-5xl">
-              Construction, finishing and care — held in one conversation.
+              Construction, planting and care — held in one conversation.
             </h2>
           </Reveal>
         ) : null}

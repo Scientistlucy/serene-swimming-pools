@@ -8,16 +8,16 @@ import { images } from "@/data/images";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Serene Swimming Pool Contractors is a swimming pool construction company in Kenya, designing pools around the property, the architecture and the way you live.",
+    "Adgreens landscape is a landscaping and garden design studio in Nairobi, shaping outdoor space around the property, the climate and the way you live.",
 };
 
 export default function AboutPage() {
   return (
     <main id="content">
       <PageHero
-        eyebrow="About Serene"
-        title="More Than a Pool. A Space Built Around You."
-        description="Swimming pool experts in Kenya, working from first conversation through construction, finishing and ongoing care."
+        eyebrow="About Adgreens"
+        title="More Than a Garden. A Landscape Built Around You."
+        description="Landscaping from Northern Bypass Road in Nairobi — from first conversation through planting, finishing and ongoing garden care."
         image={images.why}
       />
       <IntroSection showTitle={false} extended />

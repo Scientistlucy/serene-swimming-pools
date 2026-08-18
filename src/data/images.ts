@@ -9,123 +9,123 @@ export type SiteImage = {
 
 export const images = {
   hero: {
-    src: unsplash("photo-1512917774080-9991f1c4c750"),
-    alt: "Luxury residential swimming pool beside a modern home at dusk",
+    src: unsplash("photo-1558904541-efa843a96f01"),
+    alt: "A composed garden of hedges, lawn and planting in soft daylight",
     credit: "Unsplash",
   },
   intro: {
-    src: unsplash("photo-1613490493576-7fde63acd811"),
-    alt: "Architectural villa with a still, geometric swimming pool",
+    src: unsplash("photo-1564013799919-ab600027ffc6"),
+    alt: "A contemporary house sitting in a considered lawn and garden",
     credit: "Unsplash",
   },
   cta: {
-    src: unsplash("photo-1540541338287-41700207dee6"),
-    alt: "Resort-style swimming pool with calm water and surrounding palms",
+    src: unsplash("photo-1420593248178-d88870618ca0"),
+    alt: "Tree canopy and filtered light over a planted landscape",
     credit: "Unsplash",
   },
   why: {
-    src: unsplash("photo-1582268611958-ebfd161ef9cf"),
-    alt: "Poolside architecture with stone, water and evening light",
+    src: unsplash("photo-1591857177580-dc82b9ac4e1e"),
+    alt: "Garden planting with texture, structure and quiet colour",
     credit: "Unsplash",
   },
   construction: {
-    src: unsplash("photo-1503387762-592deb58ef4e"),
-    alt: "Architectural construction detailing on a building site",
+    src: unsplash("photo-1542601906990-b4d3fb778b09"),
+    alt: "Hands setting plants into prepared soil",
     credit: "Unsplash",
   },
   finishing: {
-    src: unsplash("photo-1584622650111-993a426fbf0a"),
-    alt: "Precision tiling and stone finishing detail",
+    src: unsplash("photo-1523348837708-15d4a09cfac2"),
+    alt: "Close planting and groundcover with considered texture",
     credit: "Unsplash",
   },
   water: {
-    src: unsplash("photo-1572331165267-854da2b10ccc"),
-    alt: "Close view of swimming pool water and tiled edge",
+    src: unsplash("photo-1416879595882-3373a0480b5b"),
+    alt: "Garden beds laid out with planting and soil ready for growth",
     credit: "Unsplash",
   },
 } satisfies Record<string, SiteImage>;
 
 export const serviceImages: Record<string, SiteImage> = {
   design: {
-    src: unsplash("photo-1600585154340-be6161a56a0c"),
-    alt: "Modern home and pool composition used as design reference",
+    src: unsplash("photo-1600585154526-990dced4db0d"),
+    alt: "A house and garden composition used as a design reference",
   },
   construction: {
-    src: unsplash("photo-1541888946425-d81bb19240f5"),
-    alt: "Construction in progress on a structured building site",
+    src: unsplash("photo-1416879595882-3373a0480b5b"),
+    alt: "Garden installation with prepared beds and planting layout",
   },
   renovation: {
-    src: unsplash("photo-1600607687939-ce8a6c25118c"),
-    alt: "Refined interior-adjacent architecture suggesting renovation quality",
+    src: unsplash("photo-1600566752355-35792bedcfea"),
+    alt: "Refined architecture suggesting a garden that belongs to the house",
   },
   maintenance: {
-    src: unsplash("photo-1572331165267-854da2b10ccc"),
-    alt: "Clear swimming pool water ready for ongoing care",
+    src: unsplash("photo-1598902108854-10e335adac99"),
+    alt: "A tended garden landscape kept in good condition",
   },
   equipment: {
-    src: unsplash("photo-1576013551627-0cc20b96c2a7"),
-    alt: "Geometric swimming pool showing circulation and clean water",
+    src: unsplash("photo-1464226184884-fa280b87c399"),
+    alt: "Soil, planting rows and ground prepared for garden work",
   },
   finishing: {
-    src: unsplash("photo-1584622650111-993a426fbf0a"),
-    alt: "Stone and tile surfaces for pool finishing",
+    src: unsplash("photo-1518531933037-91b2f5f229cc"),
+    alt: "Botanical foliage for considered planting schemes",
   },
   features: {
-    src: unsplash("photo-1540541338287-41700207dee6"),
-    alt: "Water moving across a finished pool edge",
+    src: unsplash("photo-1490750967868-88aa4486c946"),
+    alt: "Flowering planting used as a garden feature",
   },
   commercial: {
-    src: unsplash("photo-1566073771259-6a8506099945"),
-    alt: "Hotel-scale pool suited to commercial hospitality projects",
+    src: unsplash("photo-1570129477492-45c003edd2be"),
+    alt: "A property frontage suited to commercial landscape work",
   },
 };
 
-export const poolTypeImages: Record<string, SiteImage> = {
-  infinity: {
-    src: unsplash("photo-1540541338287-41700207dee6"),
-    alt: "Infinity swimming pool edge meeting the landscape",
-  },
+export const gardenTypeImages: Record<string, SiteImage> = {
   residential: {
-    src: unsplash("photo-1600596542815-ffad4c1539a9"),
-    alt: "Residential swimming pool beside a contemporary house",
+    src: unsplash("photo-1564013799919-ab600027ffc6"),
+    alt: "Residential garden and lawn beside a contemporary house",
+  },
+  lawn: {
+    src: unsplash("photo-1500382017468-9049fed747ef"),
+    alt: "Open lawn and landscape under a wide sky",
+  },
+  courtyard: {
+    src: unsplash("photo-1523348837708-15d4a09cfac2"),
+    alt: "Compact planted courtyard with succulents and groundcover",
   },
   commercial: {
-    src: unsplash("photo-1571896349842-33c89424de2d"),
-    alt: "Commercial hotel swimming pool with landscaped edges",
+    src: unsplash("photo-1570129477492-45c003edd2be"),
+    alt: "Commercial property frontage with room for landscape",
   },
-  geometric: {
-    src: unsplash("photo-1576013551627-0cc20b96c2a7"),
-    alt: "Modern geometric swimming pool seen from above",
+  borders: {
+    src: unsplash("photo-1591857177580-dc82b9ac4e1e"),
+    alt: "Planted garden borders with layered foliage",
   },
-  family: {
-    src: unsplash("photo-1499793983690-e29da59ef1c2"),
-    alt: "Family-scale tropical pool beside a private villa",
-  },
-  resort: {
-    src: unsplash("photo-1520250497591-112f2f40a3f4"),
-    alt: "Resort-style swimming pool with lounge setting",
+  outdoor: {
+    src: unsplash("photo-1600210492486-724fe5c67fb0"),
+    alt: "An outdoor room opening to garden light",
   },
   compact: {
-    src: unsplash("photo-1600585154340-be6161a56a0c"),
-    alt: "Compact courtyard pool in a contemporary property",
+    src: unsplash("photo-1568605114967-8130f3a36994"),
+    alt: "A compact urban house with a small garden setting",
   },
 };
 
 export const projectImages: SiteImage[] = [
   {
-    src: unsplash("photo-1613977257363-707ba9348227"),
-    alt: "Luxury residential swimming pool beside a modern villa",
+    src: unsplash("photo-1558904541-efa843a96f01"),
+    alt: "A formal garden of lawn, hedges and structured planting",
   },
   {
-    src: unsplash("photo-1512917774080-9991f1c4c750"),
-    alt: "Evening residential swimming pool with the house lights on",
+    src: unsplash("photo-1564013799919-ab600027ffc6"),
+    alt: "A family house with lawn and a quiet garden edge",
   },
   {
-    src: unsplash("photo-1564501049412-61c2a3083791"),
-    alt: "Landscaped hospitality swimming pool",
+    src: unsplash("photo-1600585154526-990dced4db0d"),
+    alt: "Contemporary architecture sitting in a considered landscape",
   },
   {
-    src: unsplash("photo-1499793983690-e29da59ef1c2"),
-    alt: "Garden swimming pool beside a private tropical villa",
+    src: unsplash("photo-1591857177580-dc82b9ac4e1e"),
+    alt: "Layered planting in a private Nairobi-scale garden",
   },
 ];

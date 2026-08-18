@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Request a swimming pool quotation in Kenya. Call ${site.phone}, WhatsApp, or write to ${site.email}.`,
+  description: `Request a landscaping quotation in Nairobi. Call ${site.phone}, WhatsApp, or write to ${site.email}.`,
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Let's Build Something Worth Coming Home To."
-        description="Tell us about your space and the pool you have in mind. We work across Nairobi and the rest of Kenya."
+        description="Tell us about your space and the garden you have in mind. We work from Northern Bypass Road across Nairobi and Kenya."
         image={images.cta}
       />
       <Suspense>

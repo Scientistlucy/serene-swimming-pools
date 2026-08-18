@@ -24,15 +24,15 @@ const instrument = Instrument_Serif({
 export const metadata: Metadata = {
   title: {
     default: site.seo.title,
-    template: "%s | Serene Swimming Pool Contractors",
+    template: `%s | ${site.name}`,
   },
   description: site.seo.description,
   keywords: [
-    "Serene Swimming Pool Contractors",
-    "Swimming Pool Contractors in Kenya",
-    "Swimming Pool Experts in Kenya",
-    "Swimming Pool Construction Company in Kenya",
-    "Swimming Pool Builders in Kenya",
+    "Adgreens landscape",
+    "Landscaping in Nairobi",
+    "Garden design Kenya",
+    "Landscape designers in Kenya",
+    "Landscaping company Nairobi",
   ],
   openGraph: {
     title: site.seo.title,

@@ -27,9 +27,9 @@ export function IntroSection({ showTitle = true, cta = false, extended = false }
         <div className="order-1 lg:order-2 lg:col-span-6 lg:pl-6">
           {showTitle ? (
             <Reveal>
-              <p className="eyebrow">About Serene</p>
+              <p className="eyebrow">About Adgreens</p>
               <h2 className="display mt-5 max-w-[12ch] text-4xl md:text-5xl lg:text-[3.6rem]">
-                More Than a Pool. A Space Built Around You.
+                More Than a Garden. A Landscape Built Around You.
               </h2>
             </Reveal>
           ) : (
@@ -40,19 +40,19 @@ export function IntroSection({ showTitle = true, cta = false, extended = false }
           <Reveal delay={120}>
             <div className="mt-8 max-w-lg space-y-5 text-[1.02rem] leading-relaxed text-ink/85">
               <p>
-                Serene Swimming Pool Contractors specialises in swimming pool construction and the outdoor
-                aquatic work that sits around it — design, building, finishing and ongoing care.
+                Adgreens landscape specialises in garden design and the outdoor work that sits around it —
+                planting, lawns, soil and ongoing care from Northern Bypass Road in Nairobi.
               </p>
               <p>
-                As swimming pool experts in Kenya, we treat each project as architecture in water: a pool
-                that belongs to the house, the garden and the way you actually live, not a generic shape
-                dropped onto the plot.
+                We treat each project as landscape that belongs to the house: planting and outdoor rooms
+                shaped by Kenyan light and the way you actually live, not a generic garden dropped onto
+                the plot.
               </p>
               {extended ? (
                 <p>
-                  Whether the brief is a compact family pool in Nairobi, a resort-style terrace, or a
-                  commercial pool that has to work every day, the approach is the same: understand the
-                  site, design with restraint, and build with care.
+                  Whether the brief is a compact courtyard in Nairobi, a family lawn, or a commercial
+                  frontage that has to look tended every day, the approach is the same: understand the
+                  site, design with restraint, and plant with care.
                 </p>
               ) : null}
             </div>
@@ -66,7 +66,7 @@ export function IntroSection({ showTitle = true, cta = false, extended = false }
               </a>
               {cta ? (
                 <Button href="/about" variant="light" className="ml-auto">
-                  About Serene
+                  About Adgreens
                 </Button>
               ) : null}
             </div>

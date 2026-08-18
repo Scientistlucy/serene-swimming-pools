@@ -1,15 +1,15 @@
 export const site = {
-  name: "Serene Swimming Pool Contractors",
-  shortName: "Serene",
-  tagline: "Pools Designed for the Way You Live.",
+  name: "Adgreens landscape",
+  shortName: "Adgreens",
+  tagline: "Gardens That Belong to the House.",
   description:
-    "From concept and construction to finishing and ongoing care, Serene Swimming Pool Contractors creates beautiful, durable swimming pools designed around your space.",
-  locationLabel: "Nairobi, Kenya",
-  mapsUrl: "https://maps.app.goo.gl/dofH2qcSztk5MMDW8",
-  phone: "+254 748 216 904",
-  whatsapp: "254748216904",
-  email: "hello@serenepools.co.ke",
-  address: "Nairobi, Kenya",
+    "From landscape design and planting to lawns, soil and ongoing garden care, Adgreens landscape shapes outdoor space around how you live — from Northern Bypass Road in Nairobi.",
+  locationLabel: "Northern Bypass Rd, Nairobi",
+  mapsUrl: "https://maps.app.goo.gl/tcDfNZRvH3zLojyH6",
+  phone: "+254 720 418 356",
+  whatsapp: "254720418356",
+  email: "hello@adgreens.co.ke",
+  address: "Northern Bypass Rd, Nairobi, Kenya",
   nav: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
@@ -19,9 +19,9 @@ export const site = {
     { label: "Contact", href: "/contact" },
   ],
   seo: {
-    title: "Serene Swimming Pool Contractors | Swimming Pool Construction in Kenya",
+    title: "Adgreens landscape | Landscaping and Garden Design in Nairobi",
     description:
-      "Serene Swimming Pool Contractors designs and builds custom swimming pools across Kenya — from residential and family pools to commercial and resort-style projects.",
+      "Adgreens landscape designs and builds gardens in Nairobi and across Kenya — landscape design, planting, lawns, soil and manure supply, and ongoing garden care.",
   },
 } as const;
 
@@ -32,5 +32,8 @@ export function telHref() {
 }
 
 export function whatsappHref() {
-  return `https://wa.me/${site.whatsapp.replace(/\D/g, "")}`;
+  const text = encodeURIComponent(
+    "Hello Adgreens landscape — I would like to discuss a garden or landscape project.",
+  );
+  return `https://wa.me/${site.whatsapp.replace(/\D/g, "")}?text=${text}`;
 }

@@ -41,7 +41,7 @@ export function Navbar() {
     >
       <div className="site-wrap flex h-[4.5rem] items-center justify-between md:h-20">
         <Link href="/" className="font-serif text-[1.35rem] tracking-tight">
-          Serene
+          {site.shortName}
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">

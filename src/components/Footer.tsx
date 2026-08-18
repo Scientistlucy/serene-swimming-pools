@@ -9,8 +9,8 @@ export function Footer() {
         <div className="md:col-span-5">
           <p className="font-serif text-3xl">{site.name}</p>
           <p className="mt-4 max-w-sm leading-relaxed text-ivory/70">
-            Swimming pool contractors in Kenya — design, construction, renovation and care for residential
-            and commercial pools.
+            Landscaping in Nairobi — design, planting, lawns, soil and care for residential and commercial
+            gardens.
           </p>
         </div>
         <div className="md:col-span-2">
@@ -58,7 +58,7 @@ export function Footer() {
       </div>
       <div className="site-wrap flex flex-col gap-2 border-t border-ivory/10 py-6 text-sm text-ivory/50 md:flex-row md:justify-between">
         <p>© {new Date().getFullYear()} {site.name}</p>
-        <p>Swimming pool construction company in Kenya</p>
+        <p>Landscaping and garden design in Kenya</p>
       </div>
     </footer>
   );

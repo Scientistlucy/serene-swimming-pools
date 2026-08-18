@@ -79,7 +79,7 @@ export function Contact({ showHeading = true }: ContactProps) {
             <p className="eyebrow">Reach us</p>
           )}
           <p className="mt-6 max-w-md leading-relaxed text-ink/80">
-            Tell us about your space, your ideas and the kind of pool you have in mind. We&apos;ll help you
+            Tell us about your space, your ideas and the kind of garden you have in mind. We&apos;ll help you
             explore the right approach for your project.
           </p>
 

@@ -6,7 +6,7 @@ import { images } from "@/data/images";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Selected swimming pool projects by Serene Swimming Pool Contractors — residential, family and commercial pools in Kenya.",
+    "Selected landscape projects by Adgreens landscape — residential gardens, lawns and commercial frontages in Kenya.",
 };
 
 export default function ProjectsPage() {
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <PageHero
         eyebrow="Projects"
         title="Built to Be Seen. Built to Last."
-        description="A look at the kind of pools we build — quiet geometry, family gardens and hospitality water, always shaped by the site."
+        description="A look at the kind of gardens we make — quiet lawns, planted courtyards and building frontages, always shaped by the site."
         image={images.hero}
       />
       <Projects showHeading={false} />

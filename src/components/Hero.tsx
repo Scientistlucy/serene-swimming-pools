@@ -15,7 +15,7 @@ export function Hero() {
       <div className="site-wrap relative flex min-h-[100svh] items-end pb-16 pt-32 md:pb-20">
         <div className="grid w-full items-end gap-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <p className="eyebrow text-sand">Swimming pool contractors in Kenya</p>
+            <p className="eyebrow text-sand">Landscaping in Nairobi, Kenya</p>
             <h1 className="display mt-5 max-w-[14ch] text-[3.15rem] sm:text-6xl md:text-7xl lg:text-[5.4rem]">
               {site.tagline}
             </h1>

@@ -7,7 +7,7 @@ import { images } from "@/data/images";
 export const metadata: Metadata = {
   title: "Process",
   description:
-    "How Serene Swimming Pool Contractors works: consultation, site assessment, design, construction, finishing and handover.",
+    "How Adgreens landscape works: consultation, site assessment, design, installation, finishing and handover.",
 };
 
 export default function ProcessPage() {
@@ -15,7 +15,7 @@ export default function ProcessPage() {
     <main id="content">
       <PageHero
         eyebrow="Process"
-        title="From first conversation to water in the pool."
+        title="From first conversation to a garden that holds."
         description="A clear sequence so you always know what comes next — from the first visit to handover and care."
         image={images.construction}
       />
