@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Contact } from "@/components/Contact";
 import { PageHero } from "@/components/PageHero";
 import { images } from "@/data/images";
@@ -18,7 +19,9 @@ export default function ContactPage() {
         description="Tell us about your space and the pool you have in mind. We work across Nairobi and the rest of Kenya."
         image={images.cta}
       />
-      <Contact showHeading={false} />
+      <Suspense>
+        <Contact showHeading={false} />
+      </Suspense>
     </main>
   );
 }

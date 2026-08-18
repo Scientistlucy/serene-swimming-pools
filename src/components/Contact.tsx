@@ -4,9 +4,10 @@ import { projectTypes } from "@/data/content";
 import { site, telHref, whatsappHref } from "@/data/site";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
-import { FormEvent, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { FormEvent, useMemo, useState } from "react";
 
-const initial = {
+const fallback = {
   name: "",
   phone: "",
   email: "",
@@ -15,11 +16,27 @@ const initial = {
   message: "",
 };
 
+function isProjectType(value: string | null): value is (typeof projectTypes)[number] {
+  return Boolean(value && projectTypes.includes(value as (typeof projectTypes)[number]));
+}
+
 type ContactProps = {
   showHeading?: boolean;
 };
 
 export function Contact({ showHeading = true }: ContactProps) {
+  const params = useSearchParams();
+  const requestedType = params.get("type");
+  const initial = useMemo(
+    () => ({
+      ...fallback,
+      projectType: isProjectType(requestedType) ? requestedType : fallback.projectType,
+      message: isProjectType(requestedType)
+        ? `I am interested in a ${requestedType.toLowerCase()} for my property.`
+        : "",
+    }),
+    [requestedType],
+  );
   const [form, setForm] = useState(initial);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [error, setError] = useState("");
